@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHORCADO</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- script -->
+    <script  src="wordlist.js"  defer></script>
+    <script src="script.js"  defer></script>
+</head>
+<body>
+    <div class="main">
+      <div class="game">
+        <div class="left">
+          <img class="img" src="images/hangman-0.svg" />
+          <h1>AHORCADO</h1>
+        </div>
+        <div class="right">
+          <ul class="word-display"></ul>
+          <h4>
+            PISTAA:Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Laborum, ipsum!
+          </h4>
+          <p>
+            PALABRAS INCORRECTAS:
+            <span class="chance" style="color: red">0/6</span>
+          </p>
+          <div class="keyboard"></div>
+        </div>
+      </div>
+      <div class="GameOver">
+        <img class="gameoverImg" src="images/lost.gif" />
+        <h3>Haz fallado!</h3>
+        <h6>
+          La palabra correcta es:<span class="answer" style="color: red"
+            >Jazz</span
+          >
+        </h6>
+        <button onclick="location.reload()">JUEGA DE NUEVO</button>
+      </div>
+    </div>
+    
+</body>
+</html>
